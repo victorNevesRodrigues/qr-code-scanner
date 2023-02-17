@@ -140,9 +140,19 @@ img {
     }
 
     .show {
-        height: 65rem;
+        height: 68rem;
     }
 
+}
+
+@media (max-width: 485px) {
+    .scanContainer {
+        height: 46rem;
+    }
+
+    .show {
+        height: 69rem;
+    }
 }
 
 @media (max-width: 426px) {
@@ -152,6 +162,7 @@ img {
 
     .scanContainer {
         border-radius: initial;
+        height: 49rem;
     }
 
     .show {
