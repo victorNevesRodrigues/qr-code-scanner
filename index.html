@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>QR Code Scanner</title>
+</head>
+<body>
+    <section class="scanContainer">
+        <h1>Um leitor de QR Code.<br/>Para utilizar é só fazer o upload da imagem com o QR Code</h1>
+        <form action="#">
+        <div class="uploadBox">
+            <input type="file">
+            <img src="./assets/upload.svg" alt="">
+            <h2>Selecione o QR Code para ser escaneado</h2>
+        </div>
+        </form>
+        <div class="content">
+            <textarea disabled>Um leitor de QR Code online</textarea>
+            <div>
+            <button class="scanAnother">Escanear Outro</button>
+            <button class="copy">Copiar</button>
+            </div>
+        </div>
+    </section>
+    <script src="./scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(./assets/back.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.scanContainer {
+    background-color: #2225;
+    padding: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3rem;
+
+    height: 42rem;
+}
+
+.uploadBox {
+    width: 60rem;
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 1rem;
+    transition: all 1s;
+}
+
+img {
+    max-width: 20rem;
+}
+
+.content {
+    width: 85%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.show .content {
+    transition: all 0.5s ease-in;
+    opacity: 1;
+    pointer-events: initial;
+}
+
+.show {
+    height: initial;
+}
+
+.content textarea {
+    width: 100%;
+    height: 13rem;
+    outline: none;
+    color: #fff;
+    font-size: 2rem;
+    background: none;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #fff;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.content div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content button {
+    width: calc(100% / 2 - 1rem);
+    height: 6rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+[type=file] {
+    display: none;
+}
